@@ -1,6 +1,11 @@
+import './Footer.scss'
+
 function Footer(){
     return (
-        'je suis le Footer'
+        <footer className="footer">
+            <p className="copyright">© 2020 Kasa. All rights reserved</p>
+        </footer>
+        
     )
 
 }
