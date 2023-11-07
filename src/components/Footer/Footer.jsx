@@ -3,7 +3,8 @@ import './Footer.scss'
 function Footer(){
     return (
         <footer className="footer">
-            <p className="copyright">© 2020 Kasa. All rights reserved</p>
+            <img src="/src/assets/LOGO_footer.svg" alt="logo_kasa" />
+            <p className="footer_text">© 2020 Kasa. All rights reserved</p>
         </footer>
         
     )
