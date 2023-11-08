@@ -29,6 +29,7 @@ function Home(){
         <Banner />
         <div className="main">
         {data && data.map(apt => <Appart key= {apt.id} apt={apt}/>)}
+    
         </div>
         <Footer/>      
         </>
