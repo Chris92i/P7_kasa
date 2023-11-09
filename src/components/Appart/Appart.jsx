@@ -1,15 +1,15 @@
-import './Appart.scss'
+import './style.scss'
 
-function Appart({apt, title, cover}){
 
-    console.log(apt)
+function Appart({cover, title}){
+
     return (
-        <div>
-        <img src={apt.cover}/>
-        <h3>{apt.title}</h3>
+        <div className="apartmentPrev">
+        <h3>{title}</h3>
+        <div></div>
+        <img src={cover} alt="Image de présentation de l'apparmtement" />
         </div>
     )
-
 }
 
 export default Appart

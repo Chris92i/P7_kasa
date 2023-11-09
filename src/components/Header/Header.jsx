@@ -1,6 +1,10 @@
+import './style.scss'
+
 function Header(){
     return (
-        'je suis le Header'
+        <header>
+            <div className='header_container'>je suis le Header</div>
+        </header>
     )
 
 }

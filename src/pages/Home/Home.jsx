@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from "react"
-import Header from "../../components/Header/Header"
+import {useState, useEffect} from "react"
 import Banner from "../../components/Banner/Banner"
-import Footer from "../../components/Footer/Footer"
 import Appart from "../../components/Appart/Appart"
+import { Link } from "react-router-dom";
+import './style.scss'
 
 
 function Home(){
@@ -24,15 +24,18 @@ function Home(){
 
 
     return (
-        <>
-        <Header/>
+        <div className="home">
         <Banner />
-        <div className="main">
-        {data && data.map(apt => <Appart key= {apt.id} apt={apt}/>)}
-    
-        </div>
-        <Footer/>      
-        </>
+        <article>
+				{data.map((apartment) => {
+					return (
+						<Link key={apartment.id} to={`/appart/${apartment.id}`}>
+							<Appart cover={apartment.cover} title={apartment.title} />
+						</Link>
+					);
+				})}
+		</article>
+        </div>    
     )
 } 
 export default Home
