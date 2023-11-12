@@ -1,0 +1,15 @@
+.erreur {
+  font-family: Montserrat;
+  font-size: 288px;
+  line-height: 410.69px;
+  align-items: center;
+  color: #ff6060;
+
+  &_oups {
+    color: #ff6060;
+    
+    &_back{
+        color: #ff6060;
+    }
+  }
+}

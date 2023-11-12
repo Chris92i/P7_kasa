@@ -1,6 +1,7 @@
 // pour récupérer l'identifiant dans l'url il faut utiliser use params
 import {useParams, Navigate } from "react-router-dom";
 import { useEffect, useState} from "react"
+import Tag from "../../components/Tag/Tag";
 
 
 function Detail(){
@@ -24,7 +25,12 @@ function Detail(){
     //if (!apartment) return <Navigate to="*" />;
 
     return (
-        'hello Detail'
+        <>
+        hello Detail
+        <Tag/>
+        </>
+        
+
     )
 
 }
