@@ -6,7 +6,9 @@ import './style.scss'
 
 
 function Home(){
+    //Utilise le hook useState pour déclarer une variable d’état data et une fonction setData pour mettre à jour cette variable. L’état initial est un tableau vide.
     const [data, setData] = useState([])
+    // getData fonction assyncrhone qui récupere les données à partir du fichier JSON logement.json , puis stock les données dans l'état data en utilisant setData(cards)
     const getData = async () => {
         const response = await fetch("logements.json", {
             headers: {
@@ -14,9 +16,11 @@ function Home(){
                 Accept: "application/json",
             },
         });
+        // convertir la réponse en JSON et stock le résultat dans cards
         const cards = await response.json();
         setData(cards);
     };
+    //utilisation du hook useEffect pour appeler la fonction getData après le premier rendu du composant.
     useEffect(() => {
         getData();
     }, []);

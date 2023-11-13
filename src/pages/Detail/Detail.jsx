@@ -16,20 +16,25 @@ function Detail(){
             },
         });
         const cards = await response.json();
-        setData(cards);
+        const apartment = cards.find(apartment => apartment.id === id)
+        setData(apartment);
     };
     useEffect(() => {
         getData();
     }, []);
 
-    //if (!apartment) return <Navigate to="*" />;
+    if (!data) return <Navigate to="*" />;
 
     return (
         <>
         hello Detail
+        <h1>{data.title}</h1>
+        <div>
+            {data.description}
+        </div>
+
         <Tag/>
         </>
-        
 
     )
 
