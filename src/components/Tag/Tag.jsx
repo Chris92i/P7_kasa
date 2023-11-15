@@ -1,11 +1,11 @@
 import './style.scss'
 
 
-function Tag(){
-
+function Tag({ value }){
+    console.log(value)
     return(
         <div className='tag_container'>
-            <div className='tag_text'></div>
+            <div className='tag_text'>{ value }</div>
         </div>
     )
 
