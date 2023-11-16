@@ -7,6 +7,7 @@ import Carousel from "../../components/Caroussel/Carousel";
 import Error from "../Error/Error";
 import Title from "../../components/Title/Title";
 import Host from "../../components/Host/Host";
+import Rating from "../../components/Rating/Rating";
 
 
 
@@ -38,25 +39,27 @@ function Detail(){
     return (
         <>
             <Carousel/>
-            <div>
+            <div className="sousCarousel_container">
                 <div>
-
-                
                 <div className="nomLocalisation">
                     <Title titre={ data?.title }/>
                     <p className="localisation_container">{data?.location}</p>
                 </div>
-                <Host/>
-                </div>
 
                 <div className="tags_container">
                 {data?.tags?.map((tag, index) => {
-                        return <Tag value={ tag } key = {index}/>
-                    })}
+                    return <Tag value={ tag } key = {index}/>
+                })}
+                </div>
                 </div>
 
                 <div>
+                <div className="host_container">
                     <Host host={ data?.host}/>
+                </div>
+                <div>
+                    <Rating note={ data?.rating }/>
+                </div>
                 </div>
 
             </div>
