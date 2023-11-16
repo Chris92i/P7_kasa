@@ -5,6 +5,8 @@ import Tag from "../../components/Tag/Tag";
 import './style.scss'
 import Carousel from "../../components/Caroussel/Carousel";
 import Error from "../Error/Error";
+import Title from "../../components/Title/Title";
+import Host from "../../components/Host/Host";
 
 
 
@@ -37,15 +39,24 @@ function Detail(){
         <>
             <Carousel/>
             <div>
-                <div className="nomLocalisation">
-                    <p>{data?.title}</p>
-                    <Carousel img={data?.pictures}/>
-                    
-                </div>
                 <div>
+
+                
+                <div className="nomLocalisation">
+                    <Title titre={ data?.title }/>
+                    <p className="localisation_container">{data?.location}</p>
+                </div>
+                <Host/>
+                </div>
+
+                <div className="tags_container">
                 {data?.tags?.map((tag, index) => {
-                        return <Tag value={tag} key = {index}/>
+                        return <Tag value={ tag } key = {index}/>
                     })}
+                </div>
+
+                <div>
+                    <Host host={ data?.host}/>
                 </div>
 
             </div>
