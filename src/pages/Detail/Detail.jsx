@@ -38,7 +38,7 @@ function Detail(){
 
     return (
         <>
-            <Carousel/>
+            <Carousel slides= {data?.pictures}/>
             <div className="sousCarousel_container">
                 <div>
                 <div className="nomLocalisation">
