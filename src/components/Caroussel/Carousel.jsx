@@ -27,9 +27,9 @@ const Carousel = ({ slides = [] }) => {
   
       return (
         <>
-            <div>
+            <div className='carousel-container'>
                 <button onClick={goPrev}>Précédent</button>
-                {slides.length > 0 && <img src={slides[index]} alt="Carousel" />}
+                {slides.length > 0 && <img className='imageCarousel' src={slides[index]} alt="Carousel" />}
                 <button onClick={goNext}>Suivant</button>
             </div>
         </>
