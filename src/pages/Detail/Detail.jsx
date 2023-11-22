@@ -8,6 +8,7 @@ import Error from "../Error/Error";
 import Title from "../../components/Title/Title";
 import Host from "../../components/Host/Host";
 import Rating from "../../components/Rating/Rating";
+import Collapse from "../../components/Collapse/Collapse";
 
 function Detail() {
   const { id } = useParams();
@@ -58,6 +59,9 @@ function Detail() {
               <Rating note={data?.rating} />
             </div>
           </div>
+        </div>
+        <div>
+          <Collapse contenu={data}/>
         </div>
       </div>
     </>

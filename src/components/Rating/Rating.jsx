@@ -2,7 +2,7 @@ import './style.scss'
 import starActive from '../../assets/star-active.png'
 import starInactive from '../../assets/star-inactive.png'
 
-function Rating({ note }){
+function Rating({ note = 0 }){
 
     const tabNote = []
     
@@ -16,7 +16,7 @@ function Rating({ note }){
         const alt = (i<= noteValeur? 'etoile active' : 'etoile inactive')
         
             tabNote.push(
-                <img key={'note-${i}'} src={source} alt={alt} />
+                <img key={'note-'+i} src={source} alt={alt} />
             )
     }
 
