@@ -1,22 +1,23 @@
 import './style.scss'
 import { useState } from 'react'
 
-function Collapse ({contenu}){
+function Collapse ({intitule, contenu}){
 
     const [isClose, setIsClose] = useState(true);
     console.log( "test",contenu)
+    console.log( "tes2", intitule)
     return(
         <>
-            <button onClick={() => setIsClose(!isClose)}>
-                {isClose ? 'Montrer' : 'Cacher'}
-            </button>
-            {isClose && (
-                <div className='contenuCollapse'>
-                    {contenu?.description}
-                    
-                </div>
-            )}
-
+            <div className='collapse_container'>
+                <button className='collapseStyle' onClick={() => setIsClose(!isClose)}>
+                    {intitule}
+                </button>
+                {isClose && (
+                    <div className='contenuCollapse'>
+                        {contenu}   
+                    </div>
+                )}
+            </div>
             
         </>
     )

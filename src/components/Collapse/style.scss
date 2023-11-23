@@ -1,6 +1,35 @@
-.contenuCollapse{
+
+.collapseStyle{
     width: 582px;
     height: 52px;
-    top: 719px;
-    left: 100px;
+    border-radius: 10px;
+    border: transparent;
+    background: #FF6060;
+
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+
+
+
+}
+.contenuCollapse{
+    width: 582px;
+    height: 249px;
+    top: 42px;
+    border-radius: 10px;
+
+    background-color: #F6F6F6;
+
+    font-family: Montserrat;
+    font-weight: 400;
+    size: 18px;
+    line-height: 25.67px;
+
+    color:#FF6060;
+    
 }
