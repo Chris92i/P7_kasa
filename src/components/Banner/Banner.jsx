@@ -2,6 +2,8 @@ import './style.scss'
 import { useLocation } from 'react-router-dom'
 //import '../../assets/homeBanner.png'
 //import '../../assets/montagne.png'
+import backHome from '../../assets/homeBanner.png'
+import backAbout from '../../assets/aboutBanner.png'
 
 
 function Banner(){
@@ -14,16 +16,19 @@ function Banner(){
 
     switch(location.pathname){
         case '/':
-            bannerImage = '/src/assets/homeBanner.png'
+            bannerImage = backHome
+            //bannerImage = '/src/assets/homeBanner.png'
             bannerText = 'Chez vous, partout et ailleurs'
         break;
         
         case '/about':
-            bannerImage = '/src/assets/montagne.png'
+            bannerImage = backAbout
+            //bannerImage = '/src/assets/montagne.png'
             bannerText = ''
         break;
         default:
-            bannerImage = '/src/assets/homeBanner.png'
+            bannerImage = backHome
+            //bannerImage = '/src/assets/homeBanner.png'
             bannerText = 'Chez vous, partout et ailleurs' 
 
     }

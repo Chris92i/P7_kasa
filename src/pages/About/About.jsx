@@ -13,7 +13,10 @@ function About(){
 
     return (
         <>
+            <div className='About'>
             <Banner page={location}/>
+            </div>
+            <Collapse />
         </>
     )
 
