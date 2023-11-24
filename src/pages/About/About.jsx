@@ -7,11 +7,13 @@ import Collapse from '../../components/Collapse/Collapse'
 
 
 function About(){
-
+    
+    const location = useLocation()
+    console.log('page:',location)
 
     return (
         <>
-            <Banner />
+            <Banner page={location}/>
         </>
     )
 

@@ -13,12 +13,12 @@ function Banner(){
     let bannerText
 
     switch(location.pathname){
-        case '/Home':
+        case '/':
             bannerImage = '/src/assets/homeBanner.png'
             bannerText = 'Chez vous, partout et ailleurs'
         break;
         
-        case '/About':
+        case '/about':
             bannerImage = '/src/assets/montagne.png'
             bannerText = ''
         break;
