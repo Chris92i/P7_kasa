@@ -42,12 +42,13 @@
     justify-content: flex-end;
 }
 
-.collapse_container{
+.collapse_container_page{
     display: flex;
     flex-direction: raw;
 }
 
 .collapse_unite{
-    display: flex;
-    flex-direction: column;
+    //display: flex;
+    //flex-direction: column;
+    width: 582px;
 }
