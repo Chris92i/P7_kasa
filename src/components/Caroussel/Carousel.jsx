@@ -1,5 +1,6 @@
 import './style.scss'
 import { useState } from 'react'
+import Arrow from '../../assets/arrow.svg'
 
 
 const Carousel = ({ slides = [] }) => {
@@ -26,13 +27,21 @@ const Carousel = ({ slides = [] }) => {
     };
   
       return (
-        <>
-            <div className='carousel-container'>
-                <button onClick={goPrev}>Précédent</button>
-                {slides.length > 0 && <img className='imageCarousel' src={slides[index]} alt="Carousel" />}
-                <button onClick={goNext}>Suivant</button>
-            </div>
-        </>
+        
+        <div className='carousel-container'>
+            {
+              slides.length>1 && (
+              <button onClick={goPrev}><img className='chevron_avant' src={Arrow}/></button>
+              )
+            }
+            {slides.length > 0 && <img className='imageCarousel' src={slides[index]} alt="Carousel" />}
+            {slides.length>1 && (<span>{index +1}/{slides.length}</span>)}
+            {slides.length>1 && (
+                <button onClick={goNext}><img className='chevron_arriere' src= {Arrow}/></button>
+            )
+            }
+        </div>
+        
     );
 };
   export default Carousel;

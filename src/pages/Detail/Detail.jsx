@@ -62,10 +62,20 @@ function Detail() {
         </div>
         <div className="collapse_container_page">
           <div className="collapse_unite">
-          <Collapse intitule={'Description'} contenu={data?.description}/>
+          <Collapse
+                        content={{
+                            title: "Description",
+                            reply: data?.description,
+                        }}
+                    />
           </div>
           <div className="collapse_unite">
-          <Collapse intitule={'Équipements'} contenu={data?.equipments}/>
+          <Collapse
+                        content={{
+                            title: "Équipements",
+                            equipments: data?.equipments,
+                        }}
+                    />
           </div>
         </div>
       </div>
