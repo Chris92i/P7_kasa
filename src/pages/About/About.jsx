@@ -19,7 +19,7 @@ function About(){
                 <div className='collapse_container'>
                     {
                       aboutData.map(({ title, reply }, index) => (
-                        <Collapse key={ index } content={{
+                        <Collapse className='collapse_unite' key={ index } content={{
                             title: title,
                             reply: reply,
                         }
