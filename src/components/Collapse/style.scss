@@ -5,6 +5,7 @@
     border-radius: 10px;
     border: transparent;
     background: #FF6060;
+    
 
     font-family: Montserrat;
     font-size: 18px;
@@ -39,4 +40,22 @@
     display: block;
     margin: auto;
     padding: auto;
+}
+
+.about-content{
+    width: 582px;
+    height: 249px;
+    top: 42px;
+    border-radius: 10px;
+    padding: 5px;
+
+
+    background-color: #F6F6F6;
+
+    font-family: Montserrat;
+    font-weight: 400;
+    size: 18px;
+    line-height: 25.67px;
+
+    color:#FF6060;
 }
