@@ -17,6 +17,16 @@
     height: 34px;
     top: 17px;
     left: 931px;
-    color: #FF6060;
+    color:#FF6060 !important;
 
 }
+
+.active {
+    text-decoration: underline;
+    color:#FF6060 !important;
+}
+
+a:visited {
+    color: #FF6060;
+}
+
