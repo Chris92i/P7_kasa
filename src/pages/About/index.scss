@@ -5,10 +5,17 @@
     margin: auto;
     gap: 50px;
     margin-bottom: 50px;
-    width: 90%;
-    max-width: 1440px;
+    width: 100%;
+    max-width: 1240px;
 }
 
 .collapse_unite{
     width: 80%;
+}
+
+.collapse_container_about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }

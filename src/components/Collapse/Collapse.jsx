@@ -1,4 +1,6 @@
 import './style.scss'
+import Arrow from '../../assets/arrow_back_ios-24px 3.svg'
+
 import { useState } from 'react'
 
 function Collapse ({content}){
@@ -18,6 +20,7 @@ function Collapse ({content}){
                 {/* Toggle appel de la fonctione avec l'inverse de la valeur actuelle */}
                 <button className='collapseStyle' onClick={() => setIsClose(!isClose)}>
                     {title}
+                    <img className='arrow_Collapse' style={{transform: isClose? 'rotate(180deg)' : 'none', transition: 'transform 0.3s'}} src={Arrow} alt="chevron collapse" />
                 </button>
                 {/* Si isClose est vrai et equipments existe, alors une liste d’équipements est rendue. */}
                 {isClose && equipments && (

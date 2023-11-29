@@ -1,6 +1,6 @@
 
 .collapseStyle{
-    width: 582px;
+    min-width: 582px;
     height: 52px;
     border-radius: 10px;
     border: transparent;
@@ -15,7 +15,10 @@
     text-align: left;
     color: #FFFFFF;
 
-
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
 
 }
 .contenuCollapse{
@@ -37,7 +40,7 @@
 }
 
 .collapse_container{
-    display: block;
+    //display: block;
     margin: auto;
     padding: auto;
 }
@@ -58,4 +61,13 @@
     line-height: 25.67px;
 
     color:#FF6060;
+}
+
+.arrow_Collapse{
+    width: 32px;
+    height: 32px;
+    transform: rotate(0deg);
+    flex-shrink: 0;
+    color: #FFFFFF;
+
 }

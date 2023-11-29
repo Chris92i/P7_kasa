@@ -1,4 +1,4 @@
-import './index.scss'
+import styles from './index.scss?inline'
 import { useLocation } from 'react-router-dom'
 import Banner from '../../components/Banner/Banner'
 import Collapse from '../../components/Collapse/Collapse'
@@ -16,14 +16,16 @@ function About(){
         <>
             <div className='About'>
                 <Banner page={location}/>
-                <div className='collapse_container'>
+                <div className='collapse_container_about'>
                     {
                       aboutData.map(({ title, reply }, index) => (
                         <Collapse className='collapse_unite' key={ index } content={{
                             title: title,
                             reply: reply,
-                        }
-                         }/>
+                        } 
+                         }
+                         decoration = {styles}
+                         />
                       )
                       )  
                     }
