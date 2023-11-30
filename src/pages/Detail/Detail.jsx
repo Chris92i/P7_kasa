@@ -38,7 +38,7 @@ function Detail() {
       <div className="page_logement">
         <Carousel slides={data?.pictures} />
         <div className="sousCarousel_container">
-          <div>
+          <div className="bloc1">
             <div className="nomLocalisation">
               <Title titre={data?.title} />
               <p className="localisation_container">{data?.location}</p>
@@ -51,7 +51,7 @@ function Detail() {
             </div>
           </div>
 
-          <div>
+          <div className="bloc2">
             <div className="host_container">
               <Host host={data?.host} />
             </div>

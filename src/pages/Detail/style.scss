@@ -10,7 +10,15 @@
     display: flex;
     flex-direction: row;
     width: 1240px;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.bloc1{
+    width: 50%;
+}
+
+.bloc2{
+    width: 50%;
 }
 
 .nomLocalisation{
