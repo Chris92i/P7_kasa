@@ -55,8 +55,8 @@ function Detail() {
             <div className="host_container">
               <Host host={data?.host} />
             </div>
-            <div>
-              <Rating note={data?.rating} />
+            <div className="rating_container">
+              <Rating className="rating" note={data?.rating} />
             </div>
           </div>
         </div>

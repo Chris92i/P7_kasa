@@ -1,5 +1,5 @@
 .page_logement{
-    width: 1440px;
+    width: 1240px;
     height: 1024px;
     top: 951px;
     left: -543px;
@@ -48,15 +48,32 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    width: 100%;
 }
 
 .collapse_container_page{
     display: flex;
     flex-direction: raw;
+    justify-content: space-between;
+    width: 1240px;
 }
 
 .collapse_unite{
     //display: flex;
     //flex-direction: column;
     width: 582px;
+}
+
+.rating{
+    width: 196px;
+    height: 36px;
+    flex-shrink: 0;
+}
+
+.rating_container{
+    display: flex;
+    justify-content: flex-end;
+    width: 196px;
+    height: 36px;
+    flex-shrink: 0;
 }
